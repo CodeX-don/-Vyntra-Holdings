@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vyntra Holdings | Premium Wigs, Lashes, Nails &amp; Gift Hampers in Namibia</title>
+    <meta
+      name="description"
+      content="Vyntra Holdings is a Namibian beauty and gifting boutique offering quality wigs, professional wig installation, eyelash extensions, manicures, pedicures and curated gift hampers. Book online via WhatsApp."
+    />
+    <meta name="theme-color" content="#F9F5F0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    />
+
+    <!-- Styles (load order matters — see TDD §3.2) -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- =====================================================================
+         HEADER
+         ===================================================================== -->
+    <header class="header header--overlay" data-header>
+      <div class="container header__inner">
+        <a class="header__logo" href="index.html">Vyntra Holdings</a>
+
+        <nav class="nav" id="primary-nav" data-nav aria-label="Primary Navigation">
+          <button
+            class="nav__close"
+            type="button"
+            data-nav-close
+            aria-label="Close menu"
+          >
+            <svg class="nav__close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false">
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
+
+          <ul class="nav__list" role="list">
+            <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#services" data-nav-section="services">Services</a></li>
+            <li class="nav__item"><a class="nav__link" href="#about" data-nav-section="about">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#hampers" data-nav-section="hampers">Hampers</a></li>
+            <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+          </ul>
+
+          <a class="btn btn--primary nav__cta" href="booking.html">Book Now</a>
+        </nav>
+
+        <div class="header__actions">
+          <a class="btn btn--primary btn--sm header__cta" href="booking.html">Book Now</a>
+
+          <button
+            class="nav-toggle"
+            type="button"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Open menu"
+          >
+            <span class="nav-toggle__bar" aria-hidden="true"></span>
+            <span class="nav-toggle__bar" aria-hidden="true"></span>
+            <span class="nav-toggle__bar" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="nav-backdrop" data-nav-backdrop hidden></div>
+    </header>
+
+    <main id="main">
+      <!-- ===================================================================
+           1. HERO
+           =================================================================== -->
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero__image"
+          src="Images/Section banners images/banner 1 (1).jpeg"
+          alt="Warm, softly lit beauty salon with elegant neutral styling"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title" id="hero-title">
+              Enhance Your Natural Beauty, <em>Perfect</em> Your Style.
+            </h1>
+            <p class="hero__text">
+              Premium wigs, flawless lashes, pristine nails, and curated hampers. Your
+              one-stop destination for elegance in Namibia.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary btn--lg" href="booking.html">Book Appointment</a>
+              <a class="btn btn--light-outline btn--lg" href="#hampers">View Hampers</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           2. QUICK SERVICE STRIP
+           =================================================================== -->
+      <section class="quick-strip" aria-label="Our services at a glance">
+        <div class="container">
+          <ul class="quick-strip__list" role="list">
+            <li class="quick-strip__item">
+              <a class="quick-strip__link" href="#services">
+                <svg class="quick-strip__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M12 3.2c4.1 0 6.8 2.9 6.8 6.5 0 2.6-.9 4-1.5 5.4-.4.9-.5 1.8-.5 3v2.7H7.2v-2.7c0-1.2-.1-2.1-.5-3-.6-1.4-1.5-2.8-1.5-5.4C5.2 6.1 7.9 3.2 12 3.2Z" />
+                  <path d="M9.3 9.1c.9-.9 2.2-1 3.2-.3" />
+                </svg>
+                Wigs
+              </a>
+            </li>
+            <li class="quick-strip__item">
+              <a class="quick-strip__link" href="#services">
+                <svg class="quick-strip__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M9 3.5 5 7.5l3 3 4-4-3-3Z" />
+                  <path d="M8 8.5 18.5 19a1.8 1.8 0 0 0 2.5-2.5L10.5 6" />
+                </svg>
+                Installation
+              </a>
+            </li>
+            <li class="quick-strip__item">
+              <a class="quick-strip__link" href="#services">
+                <svg class="quick-strip__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M2.5 13c2.6-3.3 5.9-5 9.5-5s6.9 1.7 9.5 5c-2.6 3.3-5.9 5-9.5 5s-6.9-1.7-9.5-5Z" />
+                  <circle cx="12" cy="13" r="2.2" />
+                  <path d="M5.5 8.1 4.6 6.2M11 7.2V5M16.5 8.1l.9-1.9" />
+                </svg>
+                Lashes
+              </a>
+            </li>
+            <li class="quick-strip__item">
+              <a class="quick-strip__link" href="#services">
+                <svg class="quick-strip__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M8 3.5h8v8a4 4 0 0 1-4 4 4 4 0 0 1-4-4v-8Z" />
+                  <path d="M12 15.5v3M8.5 21h7" />
+                </svg>
+                Nails
+              </a>
+            </li>
+            <li class="quick-strip__item">
+              <a class="quick-strip__link" href="#hampers">
+                <svg class="quick-strip__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M3.5 8.5h17v11.5h-17z" />
+                  <path d="M3.5 8.5 5 4.5h14l1.5 4M12 8.5v11.5" />
+                  <path d="M12 8.5c-1.6 0-3.4-1-3.4-2.6A1.9 1.9 0 0 1 12 4.8a1.9 1.9 0 0 1 3.4 1.1c0 1.6-1.8 2.6-3.4 2.6Z" />
+                </svg>
+                Hampers
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           3. ABOUT THE FOUNDER
+           =================================================================== -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="split split--media-first">
+            <div class="founder__media reveal">
+              <div class="founder__frame" aria-hidden="true"></div>
+              <!-- PLACEHOLDER: replace with the client's final portrait if a newer photo is supplied -->
+              <img
+                class="founder__image"
+                src="Images/Founder.jpeg"
+                alt="Warm portrait of the founder and creative director of Vyntra Holdings"
+                width="800"
+                height="1000"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="founder__content reveal">
+              <span class="overline">Meet the Founder</span>
+              <h2 id="about-title">Behind the Brand</h2>
+              <p class="founder__body">
+                Welcome to Vyntra Holdings. I am Lucia Pedro, the creative director behind
+                this brand. My passion is helping you look and feel your absolute best,
+                whether that's through a flawless set of lashes, a stunning new wig, or the
+                perfect gift. Every service is curated with quality and care.
+              </p>
+              <div class="founder__attribution">
+                <span class="signature">Lucia Pedro</span>
+                <span class="founder__role">Founder &amp; Creative Director</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           4. OUR SERVICES
+           =================================================================== -->
+      <section class="section section--alt" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section__header">
+            <span class="overline">What We Offer</span>
+            <h2 id="services-title">Our Services</h2>
+            <p class="section__text">
+              Considered, unhurried treatments delivered with premium products and a
+              personal touch.
+            </p>
+          </div>
+
+          <div class="grid grid--services">
+            <!-- Wig Sales -->
+            <article class="card reveal">
+              <div class="card__media">
+                <img
+                  class="card__image"
+                  src="Images/Wigs/Wig 1.jpeg"
+                  alt="Full-length quality wig in a soft straight texture"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Wig Sales</h3>
+                <p class="card__text">Quality wigs in various lengths &amp; textures.</p>
+                <div class="card__footer">
+                  <span class="card__price">N$1,800 – N$2,800</span>
+                  <a class="btn btn--outline btn--sm" href="booking.html?service=wig-sales">Book</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Wig Installation -->
+            <article class="card reveal">
+              <div class="card__media">
+                <img
+                  class="card__image"
+                  src="Images/Wigs/Wig 2.jpeg"
+                  alt="Wig installed seamlessly along the natural hairline"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Wig Installation</h3>
+                <p class="card__text">Professional, secure, and seamless fit.</p>
+                <div class="card__footer">
+                  <span class="card__price">N$250</span>
+                  <a class="btn btn--outline btn--sm" href="booking.html?service=wig-install">Book</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Eyelash Extensions -->
+            <article class="card reveal">
+              <div class="card__media">
+                <img
+                  class="card__image"
+                  src="Images/eyelash/eyelash 1.jpeg"
+                  alt="Close-up of a classic eyelash extension set"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Eyelash Extensions</h3>
+                <p class="card__text">All styles, from natural to dramatic.</p>
+                <div class="card__footer">
+                  <span class="card__price">N$250</span>
+                  <a class="btn btn--outline btn--sm" href="booking.html?service=lashes">Book</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Nails (Hands) -->
+            <article class="card reveal">
+              <div class="card__media">
+                <img
+                  class="card__image"
+                  src="Images/Nails/Nails 1.jpeg"
+                  alt="Manicured hands finished with a glossy neutral polish"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Nails (Hands)</h3>
+                <p class="card__text">Pristine manicure and nail care.</p>
+                <div class="card__footer">
+                  <span class="card__price">N$160</span>
+                  <a class="btn btn--outline btn--sm" href="booking.html?service=nails-hands">Book</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Nails (Toes) -->
+            <article class="card reveal">
+              <div class="card__media">
+                <img
+                  class="card__image"
+                  src="Images/Toe Nails/Toe nails 1.jpeg"
+                  alt="Pedicured toes finished with a soft neutral polish"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Nails (Toes)</h3>
+                <p class="card__text">Relaxing and revitalizing pedicure.</p>
+                <div class="card__footer">
+                  <span class="card__price">N$80</span>
+                  <a class="btn btn--outline btn--sm" href="booking.html?service=nails-toes">Book</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           5. PHOTO GALLERY (BENTO GRID)
+           Asymmetric 3-column bento grid + lightbox.
+           CSS -> css/components.css    JS -> js/modules/gallery.js
+           NOTE: images point at existing files in Images/. Swap in the final
+           gallery assets when ready (e.g. Images/gallery-wig-wide.jpeg).
+           ONLY wigs, lashes, nails and hampers — never makeup/cosmetics.
+           =================================================================== -->
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="container">
+          <div class="gallery__header">
+            <div class="gallery__header-main">
+              <span class="gallery__badge">Portfolio</span>
+              <h2 class="gallery__title" id="work-title">Photo Gallery</h2>
+            </div>
+            <p class="gallery__intro">
+              Captured moments of flawless lashes, stunning wigs, pristine nails, and
+              curated hampers.
+            </p>
+          </div>
+
+          <ul class="gallery__grid reveal" data-gallery role="list">
+            <li class="gallery__item gallery__item--wide">
+              <button
+                class="gallery__button"
+                type="button"
+                data-lightbox-open
+                data-caption="Sleek bone-straight wig, customised and installed."
+              >
+                <img
+                  class="gallery__image"
+                  src="Images/Wigs/Wig 3.jpeg"
+                  alt="Client wearing a sleek bone-straight wig"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="gallery__overlay" aria-hidden="true">
+                  <span class="gallery__plus">+</span>
+                </span>
+              </button>
+            </li>
+
+            <li class="gallery__item">
+              <button
+                class="gallery__button"
+                type="button"
+                data-lightbox-open
+                data-caption="Classic lash set for a soft, natural everyday look."
+              >
+                <img
+                  class="gallery__image"
+                  src="Images/eyelash/eyelash 2.jpeg"
+                  alt="Close-up of a classic eyelash extension set"
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="gallery__overlay" aria-hidden="true">
+                  <span class="gallery__plus">+</span>
+                </span>
+              </button>
+            </li>
+
+            <li class="gallery__item">
+              <button
+                class="gallery__button"
+                type="button"
+                data-lightbox-open
+                data-caption="Glossy almond manicure in a warm nude."
+              >
+                <img
+                  class="gallery__image"
+                  src="Images/Nails/Nails 3.jpeg"
+                  alt="Manicured hands with a glossy almond nude finish"
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="gallery__overlay" aria-hidden="true">
+                  <span class="gallery__plus">+</span>
+                </span>
+              </button>
+            </li>
+
+            <li class="gallery__item">
+              <button
+                class="gallery__button"
+                type="button"
+                data-lightbox-open
+                data-caption="Celebration hamper styled with a satin ribbon."
+              >
+                <img
+                  class="gallery__image"
+                  src="Images/Gift hampers/Gift hampers  1.jpeg"
+                  alt="Gift hamper wrapped with a satin ribbon"
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="gallery__overlay" aria-hidden="true">
+                  <span class="gallery__plus">+</span>
+                </span>
+              </button>
+            </li>
+
+            <li class="gallery__item">
+              <button
+                class="gallery__button"
+                type="button"
+                data-lightbox-open
+                data-caption="Layered body-wave wig with a seamless hairline."
+              >
+                <img
+                  class="gallery__image"
+                  src="Images/Wigs/Wig 6.jpeg"
+                  alt="Layered body-wave wig with a natural hairline"
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="gallery__overlay" aria-hidden="true">
+                  <span class="gallery__plus">+</span>
+                </span>
+              </button>
+            </li>
+
+            <li class="gallery__item">
+              <button
+                class="gallery__button"
+                type="button"
+                data-lightbox-open
+                data-caption="Hybrid volume lashes for added depth."
+              >
+                <img
+                  class="gallery__image"
+                  src="Images/eyelash/eyelash 4.jpeg"
+                  alt="Hybrid volume eyelash extensions with extra depth"
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="gallery__overlay" aria-hidden="true">
+                  <span class="gallery__plus">+</span>
+                </span>
+              </button>
+            </li>
+
+            <li class="gallery__item gallery__item--wide">
+              <button
+                class="gallery__button"
+                type="button"
+                data-lightbox-open
+                data-caption="Custom self-care gift box, ready for delivery."
+              >
+                <img
+                  class="gallery__image"
+                  src="Images/Gift hampers/Gift hampers 4.jpeg"
+                  alt="Custom self-care gift box prepared for delivery"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="gallery__overlay" aria-hidden="true">
+                  <span class="gallery__plus">+</span>
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Lightbox (single instance, driven by js/modules/gallery.js) -->
+      <div
+        class="lightbox"
+        data-lightbox
+        role="dialog"
+        aria-modal="true"
+        aria-label="Image viewer"
+        hidden
+      >
+        <div class="lightbox__overlay" data-lightbox-close></div>
+
+        <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Previous image">
+          <svg class="lightbox__nav-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </button>
+
+        <figure class="lightbox__figure">
+          <img class="lightbox__image" data-lightbox-image src="" alt="" />
+          <figcaption class="lightbox__caption" data-lightbox-caption></figcaption>
+        </figure>
+
+        <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="Next image">
+          <svg class="lightbox__nav-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </button>
+
+        <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close image viewer">
+          <svg
+            class="lightbox__close-icon"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- ===================================================================
+           6. CURATED HAMPERS
+           =================================================================== -->
+      <section class="section" id="hampers" aria-labelledby="hampers-title">
+        <div class="container">
+          <div class="hampers__featured split split--wide-first">
+            <figure class="hampers__media reveal u-mb-0">
+              <img
+                class="hampers__image"
+                src="Images/Gift hampers/Gift hampers.jpeg"
+                alt="Large gift hamper styled with ribbon and assorted self-care treats"
+                width="960"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+
+            <div class="reveal">
+              <span class="overline">Curated Hampers</span>
+              <h2 id="hampers-title">The Art of Gifting</h2>
+              <p class="section__text u-text-left">
+                Beautifully packaged hampers for men, women, children, and fully customised
+                requests.
+              </p>
+              <p class="hampers__price u-mt-md">N$980 – N$4,800</p>
+              <div class="hampers__actions">
+                <a class="btn btn--primary" href="contact.html">Enquire / Order Hamper</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hampers__gallery">
+            <figure class="hampers__thumb reveal u-mb-0">
+              <img class="hampers__thumb-image" src="Images/Gift hampers/Gift hampers  1.jpeg" alt="Gift hamper wrapped with a satin ribbon" width="400" height="400" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="hampers__thumb reveal u-mb-0">
+              <img class="hampers__thumb-image" src="Images/Gift hampers/Gift hampers  2.jpeg" alt="Hamper arranged with luxury self-care treats" width="400" height="400" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="hampers__thumb reveal u-mb-0">
+              <img class="hampers__thumb-image" src="Images/Gift hampers/Gift hampers  3.jpeg" alt="Celebration hamper with decorative packaging" width="400" height="400" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="hampers__thumb reveal u-mb-0">
+              <img class="hampers__thumb-image" src="Images/Gift hampers/Gift hampers 4.jpeg" alt="Hand-tied hamper prepared for nationwide delivery" width="400" height="400" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           7. DELIVERY BANNER
+           =================================================================== -->
+      <section class="delivery-banner" aria-label="Delivery information">
+        <div class="container delivery-banner__inner">
+          <p class="delivery-banner__text">
+            <span class="delivery-banner__icon" aria-hidden="true">🚚</span>
+            <strong>Nationwide Delivery Available.</strong>
+            We deliver our beauty services and hampers to all towns across Namibia.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           8. FINAL CTA
+           =================================================================== -->
+      <section class="section" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta__card reveal">
+            <span class="overline">Ready When You Are</span>
+            <h2 id="cta-title">Let's Make Your Next Look Effortless</h2>
+            <p class="cta__text">
+              Reserve your appointment in under a minute, or send us a message and we'll
+              help you choose the perfect service or gift.
+            </p>
+            <div class="cta__actions">
+              <a class="btn btn--primary btn--lg" href="booking.html">Book Now</a>
+              <a
+                class="btn btn--outline btn--lg"
+                href="https://wa.me/264818321277?text=Hi%20Vyntra%20Holdings%2C%20I%27m%20interested%20in%20your%20services."
+                target="_blank"
+                rel="noopener"
+              >
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================================
+         FOOTER
+         ===================================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <p class="footer__brand">Vyntra Holdings</p>
+            <p class="footer__text">
+              Premium wigs, flawless lashes, pristine nails, and curated hampers for
+              clients across Namibia.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="footer__title">Explore</h2>
+            <ul class="footer__list" role="list">
+              <li><a class="footer__link" href="index.html">Home</a></li>
+              <li><a class="footer__link" href="index.html#services">Services</a></li>
+              <li><a class="footer__link" href="index.html#about">About</a></li>
+              <li><a class="footer__link" href="index.html#hampers">Hampers</a></li>
+              <li><a class="footer__link" href="contact.html">Contact</a></li>
+              <li><a class="footer__link" href="booking.html">Book Now</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="footer__title">Services</h2>
+            <ul class="footer__list" role="list">
+              <li><a class="footer__link" href="booking.html?service=wig-sales">Wig Sales</a></li>
+              <li><a class="footer__link" href="booking.html?service=wig-install">Wig Installation</a></li>
+              <li><a class="footer__link" href="booking.html?service=lashes">Eyelash Extensions</a></li>
+              <li><a class="footer__link" href="booking.html?service=nails-hands">Nails (Hands)</a></li>
+              <li><a class="footer__link" href="booking.html?service=nails-toes">Nails (Toes)</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="footer__title">Visit Us</h2>
+            <ul class="footer__list" role="list">
+              <!-- PLACEHOLDER: replace with the salon's real address, phone and email -->
+              <li class="footer__link">123 Independence Avenue, Windhoek, Namibia</li>
+              <li><a class="footer__link" href="tel:+264818321277">+264 81 832 1277</a></li>
+              <li><a class="footer__link" href="mailto:charlinepedro247@gmail.com">charlinepedro247@gmail.com</a></li>
+              <li><a class="footer__link" href="https://instagram.com/glowlashes_by_charline" target="_blank" rel="noopener">Instagram: @glowlashes_by_charline</a></li>
+              <li class="footer__link">Mon – Sat: 9 AM – 6 PM · Sun: Closed</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>© 2026 Vyntra Holdings. All rights reserved.</p>
+          <p>Nationwide delivery across Namibia.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+/* ==========================================================================
+   02 — TOKENS
+   Single source of truth for every design decision in the project.
+   RULE: no other file may hardcode a colour or a spacing value.
+   ========================================================================== */
+
+:root {
+  /* ---------- Colour palette (PRD §3.1) ---------- */
+  --bg-primary: #f9f5f0;
+  --bg-secondary: #f2e8e0;
+  --bg-card: #ffffff;
+  --text-primary: #2c241f;
+  --text-secondary: #6b5d52;
+  --accent-primary: #b88a7e;
+  --accent-hover: #9a6d62;
+  --accent-gold: #c5a059;
+  --border-light: #eae0d5;
+
+  /* ---------- Text on dark surfaces ---------- */
+  --text-on-dark: #ffffff;
+  --text-on-dark-muted: rgba(255, 255, 255, 0.78);
+  --border-on-dark: rgba(255, 255, 255, 0.14);
+
+  /* ---------- Overlays (hero readability) ---------- */
+  --color-overlay: rgba(44, 36, 31, 0.55);
+  --overlay-hero: linear-gradient(
+    180deg,
+    rgba(44, 36, 31, 0.6) 0%,
+    rgba(44, 36, 31, 0.35) 55%,
+    rgba(44, 36, 31, 0.55) 100%
+  );
+  --overlay-hero-desktop: linear-gradient(
+    90deg,
+    rgba(44, 36, 31, 0.78) 0%,
+    rgba(44, 36, 31, 0.52) 45%,
+    rgba(44, 36, 31, 0.12) 100%
+  );
+
+  /* ---------- Form state colours (flow §4.2) ---------- */
+  --color-error: #d32f2f;
+  --color-success: #4c7a50;
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #1da851;
+
+  /* ---------- Typography ---------- */
+  --font-display: "Playfair Display", "Times New Roman", serif;
+  --font-body: "Jost", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.25rem;
+  --fs-section: clamp(1.9rem, 3.6vw, 2.6rem);
+  --fs-page-title: clamp(2rem, 4.6vw, 3rem);
+  --fs-hero: clamp(2.35rem, 5.6vw, 4.15rem);
+
+  --lh-tight: 1.15;
+  --lh-snug: 1.35;
+  --lh-base: 1.65;
+
+  --ls-wide: 0.16em;
+  --ls-medium: 0.06em;
+
+  /* ---------- Spacing scale ---------- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 3.5rem;
+  --space-3xl: 5rem;
+
+  --section-py: clamp(3.5rem, 8vw, 6rem);
+  --header-offset: var(--space-sm);
+
+  /* ---------- Layout ---------- */
+  --container-max: 1200px;
+  --container-pad: clamp(1.25rem, 5vw, 2.5rem);
+  --grid-gap: clamp(1.25rem, 3vw, 2rem);
+
+  /* ---------- Radii ---------- */
+  --radius-sm: 6px;
+  --radius-card: 12px;
+  --radius-image: 16px;
+  --radius-pill: 50px;
+
+  /* ---------- Shadows ---------- */
+  --shadow-card: 0 10px 30px rgba(44, 36, 31, 0.06);
+  --shadow-card-hover: 0 18px 44px rgba(44, 36, 31, 0.12);
+  --shadow-header: 0 2px 18px rgba(44, 36, 31, 0.08);
+  --shadow-panel: -12px 0 40px rgba(44, 36, 31, 0.16);
+  --shadow-summary: 0 -8px 26px rgba(44, 36, 31, 0.1);
+  --shadow-focus: 0 0 0 3px rgba(184, 138, 126, 0.25);
+
+  /* ---------- Motion ---------- */
+  --transition-fast: 150ms ease;
+  --transition-base: 240ms ease;
+  --transition-slow: 480ms ease;
+  --reveal-distance: 26px;
+
+  /* ---------- Structure ---------- */
+  --header-h: 76px;
+  --header-h-scrolled: 62px;
+  --touch-target: 44px;
+  --z-header: 100;
+  --z-summary: 150;
+  --z-nav: 200;
+}

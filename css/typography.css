@@ -1,0 +1,111 @@
+/* ==========================================================================
+   03 — TYPOGRAPHY
+   Element-level type styles only. Font files are loaded via <link> in the
+   document <head> (with preconnect) to avoid a blocking @import.
+   ========================================================================== */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  font-weight: 400;
+  line-height: var(--lh-base);
+  color: var(--text-secondary);
+  background-color: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------------------------------------------------------------------------
+   Headings
+   -------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: var(--lh-tight);
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: var(--fs-hero);
+}
+
+h2 {
+  font-size: var(--fs-section);
+}
+
+h3 {
+  font-size: var(--fs-lg);
+}
+
+h4 {
+  font-size: var(--fs-md);
+}
+
+/* Italic emphasis words inside headings and quotes. */
+h1 em,
+h2 em,
+h3 em,
+blockquote em {
+  font-style: italic;
+}
+
+/* --------------------------------------------------------------------------
+   Body copy
+   -------------------------------------------------------------------------- */
+p {
+  max-width: 68ch;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.lede {
+  font-size: var(--fs-md);
+  line-height: var(--lh-snug);
+}
+
+.overline {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  margin-bottom: var(--space-2xs);
+}
+
+.signature {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-lg);
+  color: var(--text-primary);
+}
+
+/* --------------------------------------------------------------------------
+   Links
+   -------------------------------------------------------------------------- */
+a {
+  color: var(--accent-primary);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* --------------------------------------------------------------------------
+   Selection
+   -------------------------------------------------------------------------- */
+::selection {
+  background-color: var(--accent-primary);
+  color: var(--text-on-dark);
+}

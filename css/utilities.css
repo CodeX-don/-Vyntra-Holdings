@@ -1,0 +1,102 @@
+/* ==========================================================================
+   06 — UTILITIES
+   Small, single-purpose helpers. Applied last so they win the cascade.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Text alignment
+   -------------------------------------------------------------------------- */
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+/* --------------------------------------------------------------------------
+   Spacing helpers
+   -------------------------------------------------------------------------- */
+.u-mt-0 {
+  margin-top: 0;
+}
+
+.u-mt-sm {
+  margin-top: var(--space-sm);
+}
+
+.u-mt-md {
+  margin-top: var(--space-md);
+}
+
+.u-mt-lg {
+  margin-top: var(--space-lg);
+}
+
+.u-mb-0 {
+  margin-bottom: 0;
+}
+
+.u-mb-md {
+  margin-bottom: var(--space-md);
+}
+
+/* --------------------------------------------------------------------------
+   Display helpers
+   -------------------------------------------------------------------------- */
+.u-hidden {
+  display: none;
+}
+
+.u-full {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .u-hidden-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .u-hidden-desktop {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Scroll lock (used when the mobile menu is open)
+   -------------------------------------------------------------------------- */
+.u-no-scroll {
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Scroll reveal (IntersectionObserver adds .is-visible — see js/modules/scroll.js)
+   -------------------------------------------------------------------------- */
+.reveal {
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+/* Only hide once the JS module has confirmed it is running (adds `.js` to
+   <html>). Without JS — e.g. opened via the file:// protocol where ES modules
+   are blocked — content stays fully visible instead of disappearing. */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(var(--reveal-distance));
+  will-change: transform, opacity;
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+/* Users who prefer reduced motion get the final state immediately. */
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
